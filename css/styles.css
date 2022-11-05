@@ -6,8 +6,26 @@
   --white-color: #ffffff;
   --backgroud-primary-color: #2f303a;
   --background-secondary-color: #f5f4fa;
-  --background-buttom-color: #188ce8;
+  --background-button-color: #188ce8;
   --background-icon-color: rgba(255, 255, 255, 0.1);
+  --backgound-additional-color: rgba(47, 48, 58, 0.8);
+  --background-backdrop-color: rgba(0, 0, 0, 0.2);
+  --background-color-potfolio-card: rgba(33, 150, 243, 0.9);
+  --shadow-color-team-section: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  --shadow-color-potfolio-button: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  --shadow-color-potfolio-card: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  --shadow-color-form-button: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  --border-form: 1px solid rgba(33, 33, 33, 0.2);
+  --border-header: 1px solid #ececec;
+  --border-footer-form: 1px solid rgba(255, 255, 255, 0.3);
+  --border-footer-form-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  --border-modal-button: 1px solid rgba(0, 0, 0, 0.1);
+  --border--portfolio-card: 1px solid #eeeeee;
+
+  --address-contact-color: rgba(255, 255, 255, 0.6);
   --color-icon: #afb1b8;
 }
 
@@ -72,7 +90,7 @@ img {
 /* Header*/
 
 .header {
-  border-bottom: 1px solid #ececec;
+  border-bottom: var(--border-header);
 }
 
 .header__container {
@@ -247,7 +265,7 @@ img {
 .button:hover,
 .button:focus,
 .button:active {
-  background-color: var(--background-buttom-color);
+  background-color: var(--background-button-color);
 }
 
 /* Benefits */
@@ -259,7 +277,7 @@ img {
 
   width: 270px;
   height: 120px;
-  background: var(--background-secondary-color);
+  background-color: var(--background-secondary-color);
   border-radius: 4px;
   margin-bottom: 30px;
 }
@@ -327,7 +345,7 @@ img {
   text-align: center;
 
   color: var(--white-color);
-  background-color: rgba(47, 48, 58, 0.8);
+  background-color: var(--backgound-additional-color);
 }
 
 /* Team */
@@ -343,8 +361,7 @@ img {
 
 .team__item {
   padding-bottom: 30px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--shadow-color-team-section);
   border-radius: 0px 0px 4px 4px;
 
   background-color: var(--white-color);
@@ -416,7 +433,7 @@ img {
   justify-content: center;
   width: 100%;
   height: 92px;
-  border: 1px solid #afb1b8;
+  border: 1px solid var(--color-icon);
   border-radius: 4px;
 
   transition-property: color;
@@ -485,7 +502,7 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--address-contact-color);
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -508,8 +525,8 @@ img {
   background-color: var(--backgroud-primary-color);
   color: var(--secondary-color);
 
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border: var(--border-footer-form);
+  filter: var(--border-footer-form-filter);
   border-radius: 4px;
 }
 
@@ -551,7 +568,7 @@ img {
   transition-property: opacity, visibility;
   transition-duration: 250ms;
 
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: var(--background-backdrop-color);
 }
 
 .is-hidden {
@@ -578,7 +595,7 @@ img {
   height: 30px;
 
   background-color: var(--white-color);
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: var(--border-modal-button);
   border-radius: 50%;
   fill: currentColor;
 
@@ -624,7 +641,7 @@ img {
   width: 100%;
   height: 40px;
 
-  border: 1px solid rgba(33, 33, 33, 0.2);
+  border: var(--border-form);
   border-radius: 4px;
   outline: none;
 
@@ -659,7 +676,7 @@ img {
   resize: none;
   outline: none;
 
-  border: 1px solid rgba(33, 33, 33, 0.2);
+  border: var(--border-form);
   border-radius: 4px;
 
   transition-property: border-color;
@@ -723,7 +740,7 @@ img {
   align-items: center;
   justify-content: center;
   margin-bottom: 40px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: var(--shadow-color-form-button);
 }
 
 /* Portfolio*/
@@ -758,8 +775,7 @@ img {
 .portfolio__button:active {
   color: var(--white-color);
   background-color: var(--accent-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: var(--shadow-color-potfolio-button);
 }
 
 .portfolio__list {
@@ -786,14 +802,14 @@ img {
   height: 100%;
   transform: translateY(100%);
   transition-property: transform;
-  transition-duration: 250ms;
+  transition-duration: 1000ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   padding: 63px 24px;
   font-size: 18px;
   line-height: 1.56;
   color: var(--white-color);
-  background-color: rgba(33, 150, 243, 0.9);
+  background-color: var(--background-color-potfolio-card);
 }
 
 .portfolio-card__content:hover .portfolio-card__description {
@@ -802,9 +818,9 @@ img {
 
 .portfolio-card__text {
   padding: 20px 24px;
-  border-left: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
+  border-left: var(--border--portfolio-card);
+  border-right: var(--border--portfolio-card);
+  border-bottom: var(--border--portfolio-card);
 }
 
 .portfolio-card .portfolio-card__content {
@@ -815,8 +831,7 @@ img {
 
 .portfolio-card:hover .portfolio-card__content,
 .portfolio-card:focus .portfolio-card__content {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: var(--shadow-color-potfolio-card);
 }
 
 .portfolio-card__title {
