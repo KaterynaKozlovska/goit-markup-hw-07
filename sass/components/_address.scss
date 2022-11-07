@@ -3,7 +3,7 @@
 }
 
 .address__link {
-  color: var(--white-color);
+  color: $white-color;
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -15,7 +15,7 @@
 
   &:hover,
   &:focus {
-    color: var(--accent-color);
+    color: $accent-color;
   }
 }
 
@@ -26,7 +26,7 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-  color: var(--address-contact-color);
+  color: $address-contact-color;
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -34,6 +34,6 @@
 
   &:hover,
   &:focus {
-    color: var(--accent-color);
+    color: $accent-color;
   }
 }

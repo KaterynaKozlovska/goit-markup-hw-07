@@ -1,30 +1,18 @@
-:root {
-  --primary-color: #212121;
-  --secondary-color: #757575;
-  --logo-color: #000000;
-  --accent-color: #2196f3;
-  --white-color: #ffffff;
-  --backgroud-primary-color: #2f303a;
-  --background-secondary-color: #f5f4fa;
-  --background-button-color: #188ce8;
-  --background-icon-color: rgba(255, 255, 255, 0.1);
-  --backgound-additional-color: rgba(47, 48, 58, 0.8);
-  --background-backdrop-color: rgba(0, 0, 0, 0.2);
-  --background-color-potfolio-card: rgba(33, 150, 243, 0.9);
-  --shadow-color-team-section: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  --shadow-color-potfolio-button: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  --shadow-color-potfolio-card: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-  --shadow-color-form-button: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  --border-form: 1px solid rgba(33, 33, 33, 0.2);
-  --border-header: 1px solid #ececec;
-  --border-footer-form: 1px solid rgba(255, 255, 255, 0.3);
-  --border-footer-form-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  --border-modal-button: 1px solid rgba(0, 0, 0, 0.1);
-  --border--portfolio-card: 1px solid #eeeeee;
+$primary-color: #212121;
+$secondary-color: #757575;
+$logo-color: #000000;
+$accent-color: #2196f3;
+$white-color: #ffffff;
+$address-contact-color: rgba(255, 255, 255, 0.6);
+$color-icon: #afb1b8;
 
-  --address-contact-color: rgba(255, 255, 255, 0.6);
-  --color-icon: #afb1b8;
-}
+$backgroud-primary-color: #2f303a;
+$background-secondary-color: #f5f4fa;
+$background-button-color: #188ce8;
+$background-icon-color: rgba(255, 255, 255, 0.1);
+$backgound-additional-color: rgba(47, 48, 58, 0.8);
+$background-backdrop-color: rgba(0, 0, 0, 0.2);
+$background-color-potfolio-card: rgba(33, 150, 243, 0.9);
+
+$secondary-font-family: 'Raleway', sans-serif;
+$primary-font-family: 'Roboto', sans-serif;

@@ -2,16 +2,16 @@
   padding-top: 24px;
   padding-bottom: 24px;
 
-  font-family: 'Raleway', sans-serif;
+  font-family: $secondary-font-family;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  color: var(--logo-color);
+  color: $logo-color;
   text-decoration: none;
 }
 
 .logo--color-accent {
-  color: var(--accent-color);
+  color: $accent-color;
 }
 
 .footer__logo {
@@ -22,5 +22,5 @@
 }
 
 .logo--color-white {
-  color: var(--white-color);
+  color: $white-color;
 }

@@ -15,21 +15,19 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-  color: var(--color-icon);
+  color: $color-icon;
   fill: currentColor;
-  background-color: var(--white-color);
+  background-color: $white-color;
   border-radius: 50%;
-  
+
   &:hover,
-&:focus {
-  background-color: var(--accent-color);
-  color: var(--white-color);
+  &:focus {
+    background-color: $accent-color;
+    color: $white-color;
+  }
 }
-}
-
-
 
 .footer__social {
-  background: var(--background-icon-color);
-  color: var(--white-color);
+  background: $background-icon-color;
+  color: $white-color;
 }
