@@ -1,0 +1,33 @@
+.team {
+  display: flex;
+  flex-basis: calc((100% - 90px) / 4);
+  gap: 30px;
+}
+
+.team__item {
+  padding-bottom: 30px;
+  box-shadow: var(--shadow-color-team-section);
+  border-radius: 0px 0px 4px 4px;
+
+  background-color: var(--white-color);
+}
+
+.team__descr {
+  padding-top: 30px;
+  padding-bottom: 16px;
+}
+
+.team__name {
+  margin-bottom: 10px;
+  text-align: center;
+
+  font-weight: 500;
+  font-size: inherit;
+  line-height: 1.18;
+}
+
+.team__position {
+  text-align: center;
+  color: var(--secondary-color);
+  line-height: 1.18;
+}

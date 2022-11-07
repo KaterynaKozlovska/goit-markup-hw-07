@@ -1,0 +1,33 @@
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  color: var(--color-icon);
+  fill: currentColor;
+  background-color: var(--white-color);
+  border-radius: 50%;
+}
+
+.social__link:hover,
+.social__link:focus {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+}
+
+.footer__social {
+  background: var(--background-icon-color);
+  color: var(--white-color);
+}

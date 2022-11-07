@@ -1,0 +1,56 @@
+.button {
+  border: none;
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 216px;
+  margin: 0 auto;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  color: var(--white-color);
+  background-color: var(--accent-color);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: inherit;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+  background-color: var(--background-button-color);
+}
+
+.form__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+  box-shadow: var(--shadow-color-form-button);
+}
+.portfolio__button {
+  border-style: none;
+  border-color: var(--background-secondary-color);
+  padding: 6px 22px;
+
+  min-width: auto;
+
+  transition-property: color, background-color, box-shadow;
+
+  color: var(--primary-color);
+  background-color: var(--background-secondary-color);
+
+  font-weight: 500;
+  line-height: 1.62;
+}
+.portfolio__button:hover,
+.portfolio__button:focus,
+.portfolio__button:active {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+  box-shadow: var(--shadow-color-potfolio-button);
+}
