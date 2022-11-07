@@ -17,12 +17,12 @@
   line-height: 1.87;
   letter-spacing: 0.06em;
   cursor: pointer;
-}
 
-.button:hover,
-.button:focus,
-.button:active {
-  background-color: var(--background-button-color);
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: var(--background-button-color);
+  }
 }
 
 .form__button {
@@ -46,11 +46,12 @@
 
   font-weight: 500;
   line-height: 1.62;
-}
-.portfolio__button:hover,
-.portfolio__button:focus,
-.portfolio__button:active {
-  color: var(--white-color);
-  background-color: var(--accent-color);
-  box-shadow: var(--shadow-color-potfolio-button);
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--white-color);
+    background-color: var(--accent-color);
+    box-shadow: var(--shadow-color-potfolio-button);
+  }
 }

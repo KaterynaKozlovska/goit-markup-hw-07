@@ -19,13 +19,15 @@
   fill: currentColor;
   background-color: var(--white-color);
   border-radius: 50%;
-}
-
-.social__link:hover,
-.social__link:focus {
+  
+  &:hover,
+&:focus {
   background-color: var(--accent-color);
   color: var(--white-color);
 }
+}
+
+
 
 .footer__social {
   background: var(--background-icon-color);
