@@ -17,65 +17,65 @@
 
 .product {
   text-decoration: none;
-}
 
-.product__image {
-  position: relative;
-  overflow: hidden;
-}
-
-.product__description {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  transform: translateY(100%);
-  transition-property: transform;
-  transition-duration: 1000ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-  padding: 63px 24px;
-  font-size: 18px;
-  line-height: 1.56;
-  color: $white-color;
-  background-color: $background-color-potfolio-card;
-
-  .product__content:hover & {
-    transform: translateY(0%);
+  &__image {
+    position: relative;
+    overflow: hidden;
   }
-}
-.product__content {
-  .product & {
-    transition-property: box-shadow;
-    transition-duration: 250ms;
+
+  &__description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    transition-property: transform;
+    transition-duration: 1000ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    padding: 63px 24px;
+    font-size: 18px;
+    line-height: 1.56;
+    color: $white-color;
+    background-color: $background-color-potfolio-card;
+
+    .product__content:hover & {
+      transform: translateY(0%);
+    }
   }
-  .product:hover &,
-  .product:focus & {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-      1px 4px 6px rgba(0, 0, 0, 0.16);
+  &__content {
+    .product & {
+      transition-property: box-shadow;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .product:hover &,
+    .product:focus & {
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
   }
-}
 
-.product__text {
-  padding: 20px 24px;
-  border-left: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
-}
-.product__title {
-  margin-bottom: 4px;
+  &__text {
+    padding: 20px 24px;
+    border-left: 1px solid #eeeeee;
+    border-right: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+  }
+  &__title {
+    margin-bottom: 4px;
 
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  color: $primary-color;
-}
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: $primary-color;
+  }
 
-.product__subtitle {
-  color: $secondary-color;
-  line-height: 1.87;
-  text-decoration: none;
+  &__subtitle {
+    color: $secondary-color;
+    line-height: 1.87;
+    text-decoration: none;
+  }
 }

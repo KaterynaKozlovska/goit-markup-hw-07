@@ -1,8 +1,7 @@
 .section {
   padding: 94px 0;
-}
 
-.section__title {
+  &__title {
   margin-bottom: 50px;
   margin-left: auto;
   margin-right: auto;
@@ -12,9 +11,12 @@
   font-size: 36px;
   line-height: 1.16;
 }
-.section__team {
+&__team {
   background-color: $background-secondary-color;
 }
-.section__work {
+&__work {
   padding-top: 0;
 }
+}
+
+

@@ -2,9 +2,8 @@
   display: flex;
   justify-content: center;
   gap: 10px;
-}
 
-.social__link {
+  &__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -26,6 +25,9 @@
     color: $white-color;
   }
 }
+}
+
+
 
 .footer__social {
   background: $background-icon-color;

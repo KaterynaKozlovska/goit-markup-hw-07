@@ -8,10 +8,14 @@
   line-height: 1.19;
   color: $logo-color;
   text-decoration: none;
-}
 
-.logo--color-accent {
-  color: $accent-color;
+  &--color-accent {
+    color: $accent-color;
+  }
+
+  &--color-white {
+    color: $white-color;
+  }
 }
 
 .footer__logo {
@@ -19,8 +23,4 @@
   padding: 0;
   margin-right: 0;
   margin-bottom: 20px;
-}
-
-.logo--color-white {
-  color: $white-color;
 }
